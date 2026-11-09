@@ -1,0 +1,427 @@
+{
+ "datum": "2026-11-09T14:15:19.515711Z",
+ "erster_lauf": true,
+ "firmen": [
+  {
+   "firma": "3Bears",
+   "typ": "personio",
+   "url": "https://3bears-foods-gmbh.jobs.personio.de",
+   "ergebnis": "fehler: HTTPError 404 Client Error: Not Found for url: https://3bears-foods-gmbh.jobs.personio.de/",
+   "anzahl": 0
+  },
+  {
+   "firma": "Bears with Benefits",
+   "typ": "html",
+   "url": "https://www.bears-with-benefits.com/pages/karriere",
+   "ergebnis": "html_links",
+   "anzahl": 89,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Greenforce",
+   "typ": "personio",
+   "url": "https://greenforce.jobs.personio.de",
+   "ergebnis": "ok",
+   "anzahl": 4
+  },
+  {
+   "firma": "Hellotaste",
+   "typ": "html",
+   "url": "https://hellotaste.de/pages/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 35,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Djoon",
+   "typ": "html",
+   "url": "https://djoon.de",
+   "ergebnis": "html_links",
+   "anzahl": 82,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Ogaenics",
+   "typ": "html",
+   "url": "https://join.com/companies/ogaenics",
+   "ergebnis": "html_links",
+   "anzahl": 10,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Everydays",
+   "typ": "html",
+   "url": "https://www.everydays.de/pages/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 101,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Vitabay",
+   "typ": "html",
+   "url": "https://vitabay.career.softgarden.de/",
+   "ergebnis": "html_links",
+   "anzahl": 8,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Lebenskraftpur",
+   "typ": "personio",
+   "url": "https://lebenskraftpur.jobs.personio.com/",
+   "ergebnis": "fehler: HTTPError 404 Client Error: Not Found for url: https://lebenskraftpur.jobs.personio.com/xm",
+   "anzahl": 0
+  },
+  {
+   "firma": "Herone",
+   "typ": "personio",
+   "url": "https://her1.jobs.personio.de/",
+   "ergebnis": "ok",
+   "anzahl": 1
+  },
+  {
+   "firma": "Hormonella",
+   "typ": "html",
+   "url": "https://hormonella.co/pages/karriere",
+   "ergebnis": "html_links",
+   "anzahl": 110,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Echtvital",
+   "typ": "html",
+   "url": "https://echt-vital.de/informationen/karriere/",
+   "ergebnis": "html_links",
+   "anzahl": 177,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Everdrop",
+   "typ": "html",
+   "url": "https://www.everdrop.de/about-us/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 75,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Junglueck",
+   "typ": "personio",
+   "url": "https://junglueck.jobs.personio.de/",
+   "ergebnis": "ok",
+   "anzahl": 11
+  },
+  {
+   "firma": "Billie Green",
+   "typ": "personio",
+   "url": "https://the-plantly-butchers.jobs.personio.de/",
+   "ergebnis": "ok",
+   "anzahl": 5
+  },
+  {
+   "firma": "Bauck Muehle",
+   "typ": "html",
+   "url": "https://www.bauck.de/ueber-uns/karriere/stellenanzeigen/",
+   "ergebnis": "html_links",
+   "anzahl": 62,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Vegdog",
+   "typ": "html",
+   "url": "https://www.vegdog.de/pages/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 107,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Linis Bites",
+   "typ": "html",
+   "url": "https://linisbites.com/blogs/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 61,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Complete Organics",
+   "typ": "html",
+   "url": "https://www.completeorganics.de/pages/karriere",
+   "ergebnis": "html_links",
+   "anzahl": 38,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Soto",
+   "typ": "html",
+   "url": "https://rosenheimjobs.de/organization/soto-organic-veggie-food-gmbh",
+   "ergebnis": "fehler: HTTPError 403 Client Error: Forbidden for url: https://rosenheimjobs.de/organization/soto-",
+   "anzahl": 0
+  },
+  {
+   "firma": "Huelsenreich",
+   "typ": "html",
+   "url": "https://huelsenreich.de/pages/stellenanzeigen",
+   "ergebnis": "html_links",
+   "anzahl": 58,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Foodloose",
+   "typ": "personio",
+   "url": "https://foodloose.jobs.personio.de/",
+   "ergebnis": "fehler: HTTPError 404 Client Error: Not Found for url: https://foodloose.jobs.personio.de/xml",
+   "anzahl": 0
+  },
+  {
+   "firma": "Coconilla",
+   "typ": "html",
+   "url": "https://coconilla.de/blogs/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 28,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "El Origen",
+   "typ": "html",
+   "url": "https://www.elorigenfood.de/pages/stellenangebote",
+   "ergebnis": "html_links",
+   "anzahl": 39,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Every",
+   "typ": "html",
+   "url": "https://every-foods.com/careers",
+   "ergebnis": "html_links",
+   "anzahl": 42,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Naarmann",
+   "typ": "html",
+   "url": "https://www.naarmann.de/karriere/stellenangebote",
+   "ergebnis": "html_links",
+   "anzahl": 65,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Happy Mammoth",
+   "typ": "html",
+   "url": "https://de.happymammoth.com/pages/job",
+   "ergebnis": "html_links",
+   "anzahl": 88,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Steiger Naturals",
+   "typ": "html",
+   "url": "https://steiger-naturals.de/pages/karriere",
+   "ergebnis": "html_links",
+   "anzahl": 99,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Biogena",
+   "typ": "html",
+   "url": "https://career.biogena.com/Jobs/All",
+   "ergebnis": "html_links",
+   "anzahl": 25,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Mybacs",
+   "typ": "html",
+   "url": "https://mybacs.com/pages/karriere",
+   "ergebnis": "html_links",
+   "anzahl": 79,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Aspriva",
+   "typ": "html",
+   "url": "https://aspriva.com/pages/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 69,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Metaflow",
+   "typ": "html",
+   "url": "https://karriere.metaflow.de/offene-stellen",
+   "ergebnis": "html_links",
+   "anzahl": 22,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Ahead",
+   "typ": "html",
+   "url": "https://ahead-nutrition.notion.site/WILL-YOU-GO-AHEAD-WITH-US-18af9d7e3da6803785cde4256f082a39",
+   "ergebnis": "html_leer",
+   "anzahl": 0,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Yfood",
+   "typ": "personio",
+   "url": "https://yfoodlabs.jobs.personio.de/",
+   "ergebnis": "ok",
+   "anzahl": 11
+  },
+  {
+   "firma": "Holy",
+   "typ": "html",
+   "url": "https://weareholy.notion.site/Work-at-HOLY-The-Soft-Drink-Revolution-c7cdff26df2b4b23963597c6b1b6eea6",
+   "ergebnis": "html_leer",
+   "anzahl": 0,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Livefresh",
+   "typ": "html",
+   "url": "https://livefresh.de/pages/karriere",
+   "ergebnis": "html_links",
+   "anzahl": 129,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Frank",
+   "typ": "html",
+   "url": "https://thefrankjuice.com/pages/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 268,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Loewenanteil",
+   "typ": "html",
+   "url": "https://www.loewenanteil.com/pages/karriere",
+   "ergebnis": "html_links",
+   "anzahl": 39,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Vly Foods",
+   "typ": "html",
+   "url": "https://www.vlyfoods.com/pages/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 28,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Wholey",
+   "typ": "personio",
+   "url": "https://wholey.jobs.personio.com",
+   "ergebnis": "fehler: HTTPError 404 Client Error: Not Found for url: https://wholey.jobs.personio.com/xml",
+   "anzahl": 0
+  },
+  {
+   "firma": "Nomoo",
+   "typ": "html",
+   "url": "https://nomoo.de/pages/karriere",
+   "ergebnis": "html_links",
+   "anzahl": 22,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Denns Biomarkt",
+   "typ": "html",
+   "url": "https://jobs.biomarkt.de/job-finden/berufserfahrung/berufserfahren",
+   "ergebnis": "html_links",
+   "anzahl": 46,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Rapunzel",
+   "typ": "html",
+   "url": "https://stellenangebote-rapunzel.career.softgarden.de/",
+   "ergebnis": "html_links",
+   "anzahl": 8,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Weleda",
+   "typ": "html",
+   "url": "https://weleda.wd3.myworkdayjobs.com/weleda_jobs",
+   "ergebnis": "html_leer",
+   "anzahl": 0,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Taifun Tofu",
+   "typ": "html",
+   "url": "https://bewerbung.taifun-tofu.de",
+   "ergebnis": "html_links",
+   "anzahl": 16,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Nucao",
+   "typ": "personio",
+   "url": "https://the-nu-company-gmbh.jobs.personio.de",
+   "ergebnis": "ok",
+   "anzahl": 21
+  },
+  {
+   "firma": "True Fruits",
+   "typ": "html",
+   "url": "https://true-fruits.com/kontakt-zu-uns/jobs/",
+   "ergebnis": "html_links",
+   "anzahl": 36,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Just Spices",
+   "typ": "html",
+   "url": "https://www.justspices.de/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 86,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Nabio",
+   "typ": "html",
+   "url": "https://nabio.de/ueber-uns/jobs/",
+   "ergebnis": "html_links",
+   "anzahl": 30,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Baelanse",
+   "typ": "html",
+   "url": "https://www.baelanse.com/pages/werde-teil-von-baelanse-jobs",
+   "ergebnis": "html_links",
+   "anzahl": 41,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Proveg",
+   "typ": "html",
+   "url": "https://proveg.org/careers/",
+   "ergebnis": "html_links",
+   "anzahl": 163,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Barnhouse",
+   "typ": "html",
+   "url": "https://barnhouse.de/pages/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 51,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Nextvital",
+   "typ": "html",
+   "url": "https://nextvital.de/pages/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 288,
+   "seite_geaendert": false
+  },
+  {
+   "firma": "Vegavero",
+   "typ": "html",
+   "url": "https://www.vegavero.de/pages/jobs",
+   "ergebnis": "html_links",
+   "anzahl": 53,
+   "seite_geaendert": false
+  }
+ ]
+}
