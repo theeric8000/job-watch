@@ -17,7 +17,6 @@ Bauck Muehle | https://www.bauck.de/ueber-uns/karriere/stellenanzeigen/
 Vegdog | https://www.vegdog.de/pages/jobs
 Linis Bites | https://linisbites.com/blogs/jobs
 Complete Organics | https://www.completeorganics.de/pages/karriere
-Soto | https://rosenheimjobs.de/organization/soto-organic-veggie-food-gmbh
 Huelsenreich | https://huelsenreich.de/pages/stellenanzeigen
 Foodloose | https://foodloose.jobs.personio.de/
 Coconilla | https://coconilla.de/blogs/jobs
@@ -30,9 +29,9 @@ Biogena | https://career.biogena.com/Jobs/All
 Mybacs | https://mybacs.com/pages/karriere
 Aspriva | https://aspriva.com/pages/jobs
 Metaflow | https://karriere.metaflow.de/offene-stellen
-Ahead | https://ahead-nutrition.notion.site/WILL-YOU-GO-AHEAD-WITH-US-18af9d7e3da6803785cde4256f082a39
+Ahead | https://ahead-gmbh.jobs.personio.com
 Yfood | https://yfoodlabs.jobs.personio.de/
-Holy | https://weareholy.notion.site/Work-at-HOLY-The-Soft-Drink-Revolution-c7cdff26df2b4b23963597c6b1b6eea6
+Holy | https://holy.jobs.personio.de
 Livefresh | https://livefresh.de/pages/karriere
 Frank | https://thefrankjuice.com/pages/jobs
 Loewenanteil | https://www.loewenanteil.com/pages/karriere
