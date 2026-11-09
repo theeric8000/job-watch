@@ -1,5 +1,5 @@
 3Bears | https://3bears-foods-gmbh.jobs.personio.de
-Bears with Benefits | https://www.bears-with-benefits.com/pages/karriere
+Bears with Benefits | https://bears-with-benefits.jobs.personio.de
 Greenforce | https://greenforce.jobs.personio.de
 Hellotaste | https://hellotaste.de/pages/jobs
 Djoon | https://djoon.de
@@ -49,5 +49,5 @@ Nabio | https://nabio.de/ueber-uns/jobs/
 Baelanse | https://www.baelanse.com/pages/werde-teil-von-baelanse-jobs
 Proveg | https://proveg.org/careers/
 Barnhouse | https://barnhouse.de/pages/jobs
-Nextvital | https://nextvital.de/pages/jobs
+Nextvital | https://ybl-gmbh.jobs.personio.de
 Vegavero | https://www.vegavero.de/pages/jobs
