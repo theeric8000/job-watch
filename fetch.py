@@ -112,6 +112,18 @@ def html(base):
     return out, sig, (m.group(1) if m else None)
 
 
+SHARED_HOSTS = ("join.com", "rosenheimjobs.de")   # eine Domain, viele Firmen -> Pfad gehoert zum Schluessel
+
+
+def dup_keys(name, url):
+    """Schluessel fuer Duplikat-Erkennung: Domain (bzw. Domain+Pfad bei Sammelportalen) und normalisierter Name."""
+    u = urlparse(url if "//" in url else "https://" + url)
+    h = u.netloc.lower().removeprefix("www.")
+    k1 = h + (u.path.rstrip("/").lower() if h in SHARED_HOSTS else "")
+    k2 = "name:" + re.sub(r"[^a-z0-9]", "", name.lower())
+    return [k1, k2]
+
+
 def adapter(url):
     h = urlparse(url).netloc
     if "personio" in h: return "personio"
@@ -125,10 +137,20 @@ def main():
     sigs = json.loads((D/"page_hash.json").read_text()) if (D/"page_hash.json").exists() else {}
     first_run = not seen
     status, new = [], []
+    seen_keys, resolved = {}, {}
     for line in Path("companies.txt").read_text().splitlines():
-        if "|" not in line or line.strip().startswith("#"): continue
+        if not line.strip() or line.strip().startswith("#"): continue
+        if "|" not in line:
+            status.append(dict(firma=line.strip()[:60], typ="-", url="", ergebnis="ungueltige_zeile (Format: Name | URL)", anzahl=0))
+            print(f"UNGUELTIGE ZEILE: {line.strip()[:80]}"); continue
         name, url = [x.strip() for x in line.split("|", 1)]
         kind = adapter(url); st = dict(firma=name, typ=kind, url=url, ergebnis="", anzahl=0)
+        dup = next((seen_keys[k] for k in dup_keys(name, url) if k in seen_keys), None)
+        if dup:
+            st["ergebnis"] = f"duplikat von {dup}"; status.append(st)
+            print(f"DUPLIKAT: {name} = {dup} ({url})"); continue
+        for k in dup_keys(name, url): seen_keys[k] = name
+        if kind == "personio": resolved.setdefault(urlparse(url).netloc, name)
         try:
             if kind == "personio": jobs, src = personio(url)
             elif kind == "recruitee": jobs, src = recruitee(url)
@@ -138,6 +160,8 @@ def main():
                 if emb:
                     try:
                         jobs, src = personio(f"https://{emb}"); st["eingebettet"] = emb
+                        if emb in resolved: st["hinweis"] = f"gleiche Personio-Seite wie {resolved[emb]}"
+                        resolved.setdefault(emb, name)
                     except Exception:
                         pass   # bei Fehler bleibt der html-Fallback
                 st["seite_geaendert"] = (sigs.get(name) not in (None, sig)); sigs[name] = sig
@@ -163,7 +187,5 @@ def main():
                                                ensure_ascii=False, indent=1))
     ok = sum(s["ergebnis"] in ("ok", "html_links") for s in status)
     print(f"{len(status)} Firmen, lesbar: {ok}, neue Treffer: {len(new)}")
-
-
 if __name__ == "__main__":
     main()
