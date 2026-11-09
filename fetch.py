@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Job-Watch v2: zoznam firiem -> nove relevantne ponuky + stav kazdej firmy.
 Nulove tokeny. Vystup: data/new_jobs.json, data/status.json, data/seen.json
- 
+
 Zmeny v2:
 - Personio: ak /xml neexistuje (404), cita sa HTML stranka s pracovnymi ponukami
 - Workday (napr. Weleda): citanie cez verejne JSON API (netestovane, pri chybe sa to ukaze v status.json)
@@ -14,10 +14,10 @@ from urllib.parse import urlparse, urljoin
 import xml.etree.ElementTree as ET
 import requests
 from bs4 import BeautifulSoup
- 
+
 UA = {"User-Agent": "job-watch/2.0 (private job search; 1 request per site, twice a week)"}
 D = Path("data"); D.mkdir(exist_ok=True)
- 
+
 INCLUDE = re.compile(r"analyst|analytics|analyse|analytiker|datenanaly|\bdata\b|\bdaten\b|\bbi\b|business intelligence|"
                      r"e-?commerce|growth|\bcro\b|conversion|a/b|ab-?test|tracking|reporting|performance marketing|"
                      r"marketing analyst|product analyst|controlling|insights", re.I)
@@ -25,22 +25,23 @@ EXCLUDE = re.compile(r"praktik|werkstudent|ausbildung|azubi|duales? studium|inte
 # Veduce pozicie: Erik hlada poziciu specialistu, nie lead
 LEAD = re.compile(r"head of|\bhead\b|\blead\b|leiter|leitung|director|chief|\bcmo\b|\bcto\b|vp\b|team ?lead|geschäftsführ", re.I)
 LOC_OK = re.compile(r"remote|home ?office|m(ü|ue|u)nchen|munich|ingolstadt|manching|bundesweit|deutschlandweit", re.I)
- 
+
 JOB_URL = re.compile(r"job|stelle|karriere|career|vacanc|position|festanstellung|bewerb|/jobs?/", re.I)
+JOB_TEXT = re.compile(r"\b[mwdf]\s*/\s*[mwdf]\s*/\s*[mwdfx*]|all genders|\(gn\)", re.I)   # (m/w/d), (w/m/d), (m/f/d) ...
 JOB_HOSTS = ("join.com", "softgarden", "personio", "recruitee", "workable", "myworkdayjobs", "jobs.", "rosenheimjobs")
- 
- 
+
+
 def loc_flag(title, loc):
     t = f"{title} {loc or ''}"
     if LOC_OK.search(t): return "ok"
     if not (loc or "").strip(): return "unbekannt"
     return "ausserhalb"   # bekannter Ort, passt nicht -> nur markiert, nicht verworfen
- 
- 
+
+
 def get(url):
     r = requests.get(url, headers=UA, timeout=25); r.raise_for_status(); return r
- 
- 
+
+
 def personio(base):
     host = urlparse(base).netloc
     try:
@@ -61,17 +62,20 @@ def personio(base):
         parts = [s for s in a.stripped_strings]
         if not parts: continue
         out.append(dict(title=parts[0], loc=parts[1] if len(parts) > 1 else "", url=url, dept=""))
-    if not out: raise ValueError("Personio-Seite ohne lesbare Stellen (evtl. JavaScript)")
+    if not out:
+        if re.search(r"keine offenen|no open positions", soup.get_text(" "), re.I):
+            return [], "personio-html"     # Firma hat aktuell wirklich keine Stelle
+        raise ValueError("Personio-Seite ohne lesbare Stellen (evtl. JavaScript)")
     return out, "personio-html"
- 
- 
+
+
 def recruitee(base):
     host = urlparse(base).netloc
     r = get(f"https://{host}/api/offers/")
     return [dict(title=o.get("title", ""), loc=o.get("location", ""), url=o.get("careers_url", ""), dept=o.get("department", ""))
             for o in r.json().get("offers", [])], "recruitee"
- 
- 
+
+
 def workday(base):
     u = urlparse(base); host = u.netloc
     tenant = host.split(".")[0]; site = u.path.strip("/").split("/")[0]
@@ -88,8 +92,8 @@ def workday(base):
         if offset >= j.get("total", 0) or not j.get("jobPostings"): break
         time.sleep(0.5)
     return out, "workday"
- 
- 
+
+
 def html(base):
     """Fallback: Links, deren Text nach Rolle klingt UND deren URL nach Stelleninserat aussieht."""
     r = get(base); soup = BeautifulSoup(r.text, "html.parser")
@@ -99,20 +103,22 @@ def html(base):
         if not (5 < len(txt) < 140): continue
         url = urljoin(base, a["href"])
         h = urlparse(url).netloc.lower()
-        if JOB_URL.search(urlparse(url).path) or any(x in h for x in JOB_HOSTS):
+        if JOB_URL.search(urlparse(url).path) or JOB_TEXT.search(txt) or any(x in h for x in JOB_HOSTS):
             out.append(dict(title=txt, loc="", url=url, dept=""))
     sig = hashlib.sha1(re.sub(r"\s+", " ", soup.get_text(" ")).encode()).hexdigest()
-    return out, sig
- 
- 
+    # Karriereseite bettet oft ein Personio-Widget ein -> Personio-Host erkennen
+    m = re.search(r"https?://([a-z0-9-]+\.jobs\.personio\.(?:de|com))", r.text)
+    return out, sig, (m.group(1) if m else None)
+
+
 def adapter(url):
     h = urlparse(url).netloc
     if "personio" in h: return "personio"
     if "recruitee" in h: return "recruitee"
     if "myworkdayjobs" in h: return "workday"
     return "html"
- 
- 
+
+
 def main():
     seen = json.loads((D/"seen.json").read_text()) if (D/"seen.json").exists() else {}
     sigs = json.loads((D/"page_hash.json").read_text()) if (D/"page_hash.json").exists() else {}
@@ -127,10 +133,16 @@ def main():
             elif kind == "recruitee": jobs, src = recruitee(url)
             elif kind == "workday": jobs, src = workday(url)
             else:
-                jobs, sig = html(url); src = "html"
+                jobs, sig, emb = html(url); src = "html"
+                if emb:
+                    try:
+                        jobs, src = personio(f"https://{emb}"); st["eingebettet"] = emb
+                    except Exception:
+                        pass   # bei Fehler bleibt der html-Fallback
                 st["seite_geaendert"] = (sigs.get(name) not in (None, sig)); sigs[name] = sig
             st["quelle"] = src; st["anzahl"] = len(jobs)
-            st["ergebnis"] = "ok" if (jobs and src != "html") else ("html_links" if jobs else "html_leer")
+            if jobs: st["ergebnis"] = "ok" if src != "html" else "html_links"
+            else: st["ergebnis"] = "keine_offenen_stellen" if src.startswith("personio") else "html_leer"
             hits = [j for j in jobs if INCLUDE.search(j["title"]) and not EXCLUDE.search(j["title"])
                     and not LEAD.search(j["title"])]
             for j in hits:
@@ -150,7 +162,5 @@ def main():
                                                ensure_ascii=False, indent=1))
     ok = sum(s["ergebnis"] in ("ok", "html_links") for s in status)
     print(f"{len(status)} Firmen, lesbar: {ok}, neue Treffer: {len(new)}")
- 
- 
 if __name__ == "__main__":
     main()
