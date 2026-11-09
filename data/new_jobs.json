@@ -1,69 +1,60 @@
 {
  "datum": "2026-11-09",
- "erster_lauf": true,
+ "erster_lauf": false,
  "neue": [
   {
-   "firma": "Ogaenics",
-   "titel": "E-Commerce Manager (m/w/d) WooCommerce & Shopify | Hamburg Hamburg, Germany Employee Online Marketing",
-   "ort": "",
-   "ort_check": "unbekannt",
+   "firma": "Lebenskraftpur",
+   "titel": "Senior E-Commerce Manager (m/w/d)",
+   "ort": "Hybrid, Waghäusel",
+   "ort_check": "ausserhalb",
    "abteilung": "",
-   "url": "https://join.com/companies/ogaenics/16863026-e-commerce-manager-m-w-d-woocommerce-und-shopify-oder-hamburg",
-   "quelle": "html"
+   "url": "https://lebenskraftpur.jobs.personio.com/job/2840575",
+   "quelle": "personio-html"
   },
   {
-   "firma": "Junglueck",
-   "titel": "Head of Data / Tech / E-COM (m/w/d)",
-   "ort": "München",
+   "firma": "Lebenskraftpur",
+   "titel": "Senior E-Commerce Manager (m/w/d)",
+   "ort": "Remote, Waghäusel",
    "ort_check": "ok",
-   "abteilung": "Operations",
-   "url": "https://junglueck.jobs.personio.de/job/2767588",
-   "quelle": "personio"
+   "abteilung": "",
+   "url": "https://lebenskraftpur.jobs.personio.com/job/2840583",
+   "quelle": "personio-html"
   },
   {
-   "firma": "Linis Bites",
+   "firma": "Lebenskraftpur",
    "titel": "Senior Performance Marketing Manager (m/w/d)",
-   "ort": "",
-   "ort_check": "unbekannt",
+   "ort": "Hybrid, Waghäusel",
+   "ort_check": "ausserhalb",
    "abteilung": "",
-   "url": "https://linisbites.com/blogs/festanstellung-marketing-sales-und-admin/senior-performance-marketing-manager-m-w-d",
-   "quelle": "html"
+   "url": "https://lebenskraftpur.jobs.personio.com/job/2575164",
+   "quelle": "personio-html"
   },
   {
-   "firma": "Biogena",
-   "titel": "E-Commerce Shop Manager:in (m/w/d)",
-   "ort": "",
-   "ort_check": "unbekannt",
-   "abteilung": "",
-   "url": "https://career.biogena.com/Vacancies/591/Description/1",
-   "quelle": "html"
+   "firma": "Holy",
+   "titel": "(Jr.) Operations Systems Analyst (m/f/d)",
+   "ort": "Berlin",
+   "ort_check": "ausserhalb",
+   "abteilung": "Operations",
+   "url": "https://holy.jobs.personio.de/job/2658798",
+   "quelle": "personio-xml"
   },
   {
-   "firma": "Aspriva",
-   "titel": "Laboranalysen",
-   "ort": "",
-   "ort_check": "unbekannt",
-   "abteilung": "",
-   "url": "https://aspriva.com/pages/laboranalysen",
-   "quelle": "html"
+   "firma": "Holy",
+   "titel": "Commercial Analyst (m/f/d)",
+   "ort": "Berlin",
+   "ort_check": "ausserhalb",
+   "abteilung": "Retail & Omnichannel",
+   "url": "https://holy.jobs.personio.de/job/2670488",
+   "quelle": "personio-xml"
   },
   {
-   "firma": "Proveg",
-   "titel": "Food System Data",
-   "ort": "",
-   "ort_check": "unbekannt",
+   "firma": "Weleda",
+   "titel": "Business Intelligence (BI) Developer (m/w/d)",
+   "ort": "Schwäbisch Gmünd",
+   "ort_check": "ausserhalb",
    "abteilung": "",
-   "url": "https://proveg.org/food-system-data/",
-   "quelle": "html"
-  },
-  {
-   "firma": "Nextvital",
-   "titel": "Haarmineralanalyse",
-   "ort": "",
-   "ort_check": "unbekannt",
-   "abteilung": "",
-   "url": "https://nextvital.de/pages/haarmineralanalyse",
-   "quelle": "html"
+   "url": "https://weleda.wd3.myworkdayjobs.com/en-US/weleda_jobs/job/Schwbisch-Gmnd/Business-Intelligence--BI--Developer--m-w-d-_JR100637",
+   "quelle": "workday"
   }
  ]
 }
