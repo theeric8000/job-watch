@@ -19,8 +19,9 @@ UA = {"User-Agent": "job-watch/2.0 (private job search; 1 request per site, twic
 D = Path("data"); D.mkdir(exist_ok=True)
 
 INCLUDE = re.compile(r"analyst|analytics|analyse|analytiker|datenanaly|\bdata\b|\bdaten\b|\bbi\b|business intelligence|"
-                     r"e-?commerce|growth|\bcro\b|conversion|a/b|ab-?test|tracking|reporting|performance marketing|"
-                     r"marketing analyst|product analyst|controlling|insights", re.I)
+                     r"\bcro\b|conversion|a/b|ab-?test|tracking|reporting|controlling|insights", re.I)
+# Bewusst NICHT mehr drin: "e-commerce", "growth", "performance marketing" allein -> das sind Marketing-/Manager-Rollen.
+# "Growth Analyst", "E-Commerce Analyst", "Marketing Analyst" werden weiter ueber "analyst" gefunden.
 EXCLUDE = re.compile(r"praktik|werkstudent|ausbildung|azubi|duales? studium|intern\b|internship|minijob|aushilfe", re.I)
 # Veduce pozicie: Erik hlada poziciu specialistu, nie lead
 LEAD = re.compile(r"head of|\bhead\b|\blead\b|leiter|leitung|director|chief|\bcmo\b|\bcto\b|vp\b|team ?lead|geschäftsführ", re.I)
@@ -162,5 +163,7 @@ def main():
                                                ensure_ascii=False, indent=1))
     ok = sum(s["ergebnis"] in ("ok", "html_links") for s in status)
     print(f"{len(status)} Firmen, lesbar: {ok}, neue Treffer: {len(new)}")
+
+
 if __name__ == "__main__":
     main()
