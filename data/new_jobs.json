@@ -3,58 +3,49 @@
  "erster_lauf": false,
  "neue": [
   {
-   "firma": "Lebenskraftpur",
-   "titel": "Senior E-Commerce Manager (m/w/d)",
-   "ort": "Hybrid, Waghäusel",
-   "ort_check": "ausserhalb",
-   "abteilung": "",
-   "url": "https://lebenskraftpur.jobs.personio.com/job/2840575",
-   "quelle": "personio-html"
+   "firma": "Bears with Benefits",
+   "titel": "Performance Marketing Manager - Paid Social and Search (m/f/d)",
+   "ort": "München",
+   "ort_check": "ok",
+   "abteilung": "Marketing",
+   "url": "https://bears-with-benefits.jobs.personio.de/job/2725477",
+   "quelle": "personio-xml"
   },
   {
-   "firma": "Lebenskraftpur",
-   "titel": "Senior E-Commerce Manager (m/w/d)",
-   "ort": "Remote, Waghäusel",
+   "firma": "Bears with Benefits",
+   "titel": "Performance Marketing Manager – Paid Social & Creative Strategy (m/f/d)",
+   "ort": "München",
+   "ort_check": "ok",
+   "abteilung": "Marketing",
+   "url": "https://bears-with-benefits.jobs.personio.de/job/2725461",
+   "quelle": "personio-xml"
+  },
+  {
+   "firma": "Vegdog",
+   "titel": "(Senior) Performance Marketing Manager (m/w/d)",
+   "ort": "Remote",
    "ort_check": "ok",
    "abteilung": "",
-   "url": "https://lebenskraftpur.jobs.personio.com/job/2840583",
+   "url": "https://younikat-gmbh.jobs.personio.de/job/2759027",
    "quelle": "personio-html"
   },
   {
-   "firma": "Lebenskraftpur",
-   "titel": "Senior Performance Marketing Manager (m/w/d)",
-   "ort": "Hybrid, Waghäusel",
+   "firma": "Every",
+   "titel": "Sr. Organic Growth Marketing Manager - SEO/AI Search (m/f/d)",
+   "ort": "Berlin",
    "ort_check": "ausserhalb",
+   "abteilung": "Acquisition",
+   "url": "https://every.jobs.personio.com/job/2869660",
+   "quelle": "personio-xml"
+  },
+  {
+   "firma": "Metaflow",
+   "titel": "(Senior) Performance Marketing Manager (m/w/d)",
+   "ort": "fully remote oder hybrid in Berlin",
+   "ort_check": "ok",
    "abteilung": "",
-   "url": "https://lebenskraftpur.jobs.personio.com/job/2575164",
+   "url": "https://omos-media.jobs.personio.de/job/2659536",
    "quelle": "personio-html"
-  },
-  {
-   "firma": "Holy",
-   "titel": "(Jr.) Operations Systems Analyst (m/f/d)",
-   "ort": "Berlin",
-   "ort_check": "ausserhalb",
-   "abteilung": "Operations",
-   "url": "https://holy.jobs.personio.de/job/2658798",
-   "quelle": "personio-xml"
-  },
-  {
-   "firma": "Holy",
-   "titel": "Commercial Analyst (m/f/d)",
-   "ort": "Berlin",
-   "ort_check": "ausserhalb",
-   "abteilung": "Retail & Omnichannel",
-   "url": "https://holy.jobs.personio.de/job/2670488",
-   "quelle": "personio-xml"
-  },
-  {
-   "firma": "Weleda",
-   "titel": "Business Intelligence (BI) Developer (m/w/d)",
-   "ort": "Schwäbisch Gmünd",
-   "ort_check": "ausserhalb",
-   "abteilung": "",
-   "url": "https://weleda.wd3.myworkdayjobs.com/en-US/weleda_jobs/job/Schwbisch-Gmnd/Business-Intelligence--BI--Developer--m-w-d-_JR100637",
-   "quelle": "workday"
   }
  ]
 }

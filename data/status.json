@@ -1,5 +1,5 @@
 {
- "datum": "2026-11-09T14:51:28.297862Z",
+ "datum": "2026-11-09T15:05:43.005081Z",
  "erster_lauf": false,
  "firmen": [
   {
@@ -12,12 +12,11 @@
   },
   {
    "firma": "Bears with Benefits",
-   "typ": "html",
-   "url": "https://www.bears-with-benefits.com/pages/karriere",
-   "ergebnis": "html_links",
-   "anzahl": 7,
-   "seite_geaendert": true,
-   "quelle": "html"
+   "typ": "personio",
+   "url": "https://bears-with-benefits.jobs.personio.de",
+   "ergebnis": "ok",
+   "anzahl": 9,
+   "quelle": "personio-xml"
   },
   {
    "firma": "Greenforce",
@@ -144,10 +143,11 @@
    "firma": "Vegdog",
    "typ": "html",
    "url": "https://www.vegdog.de/pages/jobs",
-   "ergebnis": "html_links",
+   "ergebnis": "ok",
    "anzahl": 5,
+   "eingebettet": "younikat-gmbh.jobs.personio.de",
    "seite_geaendert": false,
-   "quelle": "html"
+   "quelle": "personio-html"
   },
   {
    "firma": "Linis Bites",
@@ -180,8 +180,9 @@
    "firma": "Foodloose",
    "typ": "personio",
    "url": "https://foodloose.jobs.personio.de/",
-   "ergebnis": "fehler: ValueError Personio-Seite ohne lesbare Stellen (evtl. JavaScript)",
-   "anzahl": 0
+   "ergebnis": "keine_offenen_stellen",
+   "anzahl": 0,
+   "quelle": "personio-html"
   },
   {
    "firma": "Coconilla",
@@ -189,7 +190,7 @@
    "url": "https://coconilla.de/blogs/jobs",
    "ergebnis": "html_links",
    "anzahl": 3,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -205,10 +206,11 @@
    "firma": "Every",
    "typ": "html",
    "url": "https://every-foods.com/careers",
-   "ergebnis": "html_links",
-   "anzahl": 2,
+   "ergebnis": "ok",
+   "anzahl": 12,
+   "eingebettet": "every.jobs.personio.com",
    "seite_geaendert": false,
-   "quelle": "html"
+   "quelle": "personio-xml"
   },
   {
    "firma": "Naarmann",
@@ -250,10 +252,11 @@
    "firma": "Mybacs",
    "typ": "html",
    "url": "https://mybacs.com/pages/karriere",
-   "ergebnis": "html_links",
-   "anzahl": 6,
+   "ergebnis": "ok",
+   "anzahl": 4,
+   "eingebettet": "mybacs-vertriebs-gmbh.jobs.personio.de",
    "seite_geaendert": false,
-   "quelle": "html"
+   "quelle": "personio-xml"
   },
   {
    "firma": "Aspriva",
@@ -268,10 +271,11 @@
    "firma": "Metaflow",
    "typ": "html",
    "url": "https://karriere.metaflow.de/offene-stellen",
-   "ergebnis": "html_leer",
-   "anzahl": 0,
+   "ergebnis": "ok",
+   "anzahl": 8,
+   "eingebettet": "omos-media.jobs.personio.de",
    "seite_geaendert": false,
-   "quelle": "html"
+   "quelle": "personio-html"
   },
   {
    "firma": "Ahead",
@@ -345,10 +349,11 @@
    "firma": "Nomoo",
    "typ": "html",
    "url": "https://nomoo.de/pages/karriere",
-   "ergebnis": "html_links",
-   "anzahl": 3,
+   "ergebnis": "keine_offenen_stellen",
+   "anzahl": 0,
+   "eingebettet": "nomoo.jobs.personio.de",
    "seite_geaendert": false,
-   "quelle": "html"
+   "quelle": "personio-xml"
   },
   {
    "firma": "Denns Biomarkt",
@@ -381,7 +386,7 @@
    "typ": "html",
    "url": "https://bewerbung.taifun-tofu.de",
    "ergebnis": "html_links",
-   "anzahl": 3,
+   "anzahl": 14,
    "seite_geaendert": false,
    "quelle": "html"
   },
@@ -449,12 +454,11 @@
   },
   {
    "firma": "Nextvital",
-   "typ": "html",
-   "url": "https://nextvital.de/pages/jobs",
-   "ergebnis": "html_links",
+   "typ": "personio",
+   "url": "https://ybl-gmbh.jobs.personio.de",
+   "ergebnis": "ok",
    "anzahl": 1,
-   "seite_geaendert": true,
-   "quelle": "html"
+   "quelle": "personio-html"
   },
   {
    "firma": "Vegavero",
