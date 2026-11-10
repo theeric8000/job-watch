@@ -1,5 +1,5 @@
 {
- "datum": "2026-11-09T15:05:43.005081Z",
+ "datum": "2026-11-10T05:44:18.457494Z",
  "erster_lauf": false,
  "firmen": [
   {
@@ -31,8 +31,8 @@
    "typ": "html",
    "url": "https://hellotaste.de/pages/jobs",
    "ergebnis": "html_links",
-   "anzahl": 6,
-   "seite_geaendert": false,
+   "anzahl": 7,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -41,7 +41,7 @@
    "url": "https://djoon.de",
    "ergebnis": "html_links",
    "anzahl": 1,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -50,7 +50,7 @@
    "url": "https://join.com/companies/ogaenics",
    "ergebnis": "html_links",
    "anzahl": 8,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -190,7 +190,7 @@
    "url": "https://coconilla.de/blogs/jobs",
    "ergebnis": "html_links",
    "anzahl": 3,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
