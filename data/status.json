@@ -1,5 +1,5 @@
 {
- "datum": "2026-11-10T05:44:18.457494Z",
+ "datum": "2026-11-13T05:50:26.186740Z",
  "erster_lauf": false,
  "firmen": [
   {
@@ -7,7 +7,7 @@
    "typ": "personio",
    "url": "https://3bears-foods-gmbh.jobs.personio.de",
    "ergebnis": "ok",
-   "anzahl": 1,
+   "anzahl": 2,
    "quelle": "personio-html"
   },
   {
@@ -22,8 +22,8 @@
    "firma": "Greenforce",
    "typ": "personio",
    "url": "https://greenforce.jobs.personio.de",
-   "ergebnis": "ok",
-   "anzahl": 4,
+   "ergebnis": "keine_offenen_stellen",
+   "anzahl": 0,
    "quelle": "personio-xml"
   },
   {
@@ -32,7 +32,7 @@
    "url": "https://hellotaste.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 7,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -50,7 +50,7 @@
    "url": "https://join.com/companies/ogaenics",
    "ergebnis": "html_links",
    "anzahl": 8,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -59,7 +59,7 @@
    "url": "https://www.everydays.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 2,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -68,7 +68,7 @@
    "url": "https://vitabay.career.softgarden.de/",
    "ergebnis": "html_links",
    "anzahl": 6,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -76,7 +76,7 @@
    "typ": "personio",
    "url": "https://lebenskraftpur.jobs.personio.com/",
    "ergebnis": "ok",
-   "anzahl": 39,
+   "anzahl": 40,
    "quelle": "personio-html"
   },
   {
@@ -84,7 +84,7 @@
    "typ": "personio",
    "url": "https://her1.jobs.personio.de/",
    "ergebnis": "ok",
-   "anzahl": 1,
+   "anzahl": 2,
    "quelle": "personio-xml"
   },
   {
@@ -135,8 +135,8 @@
    "typ": "html",
    "url": "https://www.bauck.de/ueber-uns/karriere/stellenanzeigen/",
    "ergebnis": "html_links",
-   "anzahl": 13,
-   "seite_geaendert": false,
+   "anzahl": 12,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -146,7 +146,7 @@
    "ergebnis": "ok",
    "anzahl": 5,
    "eingebettet": "younikat-gmbh.jobs.personio.de",
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "personio-html"
   },
   {
@@ -155,7 +155,7 @@
    "url": "https://linisbites.com/blogs/jobs",
    "ergebnis": "html_links",
    "anzahl": 23,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -180,8 +180,8 @@
    "firma": "Foodloose",
    "typ": "personio",
    "url": "https://foodloose.jobs.personio.de/",
-   "ergebnis": "keine_offenen_stellen",
-   "anzahl": 0,
+   "ergebnis": "ok",
+   "anzahl": 1,
    "quelle": "personio-html"
   },
   {
@@ -190,7 +190,7 @@
    "url": "https://coconilla.de/blogs/jobs",
    "ergebnis": "html_links",
    "anzahl": 3,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -207,7 +207,7 @@
    "typ": "html",
    "url": "https://every-foods.com/careers",
    "ergebnis": "ok",
-   "anzahl": 12,
+   "anzahl": 13,
    "eingebettet": "every.jobs.personio.com",
    "seite_geaendert": false,
    "quelle": "personio-xml"
@@ -217,8 +217,8 @@
    "typ": "html",
    "url": "https://www.naarmann.de/karriere/stellenangebote",
    "ergebnis": "html_links",
-   "anzahl": 33,
-   "seite_geaendert": false,
+   "anzahl": 35,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -227,7 +227,7 @@
    "url": "https://de.happymammoth.com/pages/job",
    "ergebnis": "html_links",
    "anzahl": 5,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -245,18 +245,15 @@
    "url": "https://career.biogena.com/Jobs/All",
    "ergebnis": "html_links",
    "anzahl": 25,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
    "firma": "Mybacs",
    "typ": "html",
    "url": "https://mybacs.com/pages/karriere",
-   "ergebnis": "ok",
-   "anzahl": 4,
-   "eingebettet": "mybacs-vertriebs-gmbh.jobs.personio.de",
-   "seite_geaendert": false,
-   "quelle": "personio-xml"
+   "ergebnis": "fehler: HTTPError 500 Server Error: Internal Server Error for url: https://mybacs.com/pages/karrie",
+   "anzahl": 0
   },
   {
    "firma": "Aspriva",
@@ -290,7 +287,7 @@
    "typ": "personio",
    "url": "https://yfoodlabs.jobs.personio.de/",
    "ergebnis": "ok",
-   "anzahl": 11,
+   "anzahl": 12,
    "quelle": "personio-xml"
   },
   {
@@ -298,7 +295,7 @@
    "typ": "personio",
    "url": "https://holy.jobs.personio.de",
    "ergebnis": "ok",
-   "anzahl": 28,
+   "anzahl": 26,
    "quelle": "personio-xml"
   },
   {
@@ -307,7 +304,7 @@
    "url": "https://livefresh.de/pages/karriere",
    "ergebnis": "html_links",
    "anzahl": 28,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -361,7 +358,7 @@
    "url": "https://jobs.biomarkt.de/job-finden/berufserfahrung/berufserfahren",
    "ergebnis": "html_links",
    "anzahl": 40,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -387,7 +384,7 @@
    "url": "https://bewerbung.taifun-tofu.de",
    "ergebnis": "html_links",
    "anzahl": 14,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -404,7 +401,7 @@
    "url": "https://true-fruits.com/kontakt-zu-uns/jobs/",
    "ergebnis": "html_links",
    "anzahl": 5,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
