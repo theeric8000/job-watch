@@ -1,5 +1,5 @@
 {
- "datum": "2026-11-13T05:50:26.186740Z",
+ "datum": "2026-11-17T05:51:37.869859Z",
  "erster_lauf": false,
  "firmen": [
   {
@@ -15,7 +15,7 @@
    "typ": "personio",
    "url": "https://bears-with-benefits.jobs.personio.de",
    "ergebnis": "ok",
-   "anzahl": 9,
+   "anzahl": 12,
    "quelle": "personio-xml"
   },
   {
@@ -32,7 +32,7 @@
    "url": "https://hellotaste.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 7,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -76,7 +76,7 @@
    "typ": "personio",
    "url": "https://lebenskraftpur.jobs.personio.com/",
    "ergebnis": "ok",
-   "anzahl": 40,
+   "anzahl": 41,
    "quelle": "personio-html"
   },
   {
@@ -93,7 +93,7 @@
    "url": "https://hormonella.co/pages/karriere",
    "ergebnis": "html_links",
    "anzahl": 30,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -136,7 +136,7 @@
    "url": "https://www.bauck.de/ueber-uns/karriere/stellenanzeigen/",
    "ergebnis": "html_links",
    "anzahl": 12,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -146,7 +146,7 @@
    "ergebnis": "ok",
    "anzahl": 5,
    "eingebettet": "younikat-gmbh.jobs.personio.de",
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "personio-html"
   },
   {
@@ -154,7 +154,7 @@
    "typ": "html",
    "url": "https://linisbites.com/blogs/jobs",
    "ergebnis": "html_links",
-   "anzahl": 23,
+   "anzahl": 22,
    "seite_geaendert": true,
    "quelle": "html"
   },
@@ -207,7 +207,7 @@
    "typ": "html",
    "url": "https://every-foods.com/careers",
    "ergebnis": "ok",
-   "anzahl": 13,
+   "anzahl": 12,
    "eingebettet": "every.jobs.personio.com",
    "seite_geaendert": false,
    "quelle": "personio-xml"
@@ -218,7 +218,7 @@
    "url": "https://www.naarmann.de/karriere/stellenangebote",
    "ergebnis": "html_links",
    "anzahl": 35,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -227,7 +227,7 @@
    "url": "https://de.happymammoth.com/pages/job",
    "ergebnis": "html_links",
    "anzahl": 5,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -252,8 +252,11 @@
    "firma": "Mybacs",
    "typ": "html",
    "url": "https://mybacs.com/pages/karriere",
-   "ergebnis": "fehler: HTTPError 500 Server Error: Internal Server Error for url: https://mybacs.com/pages/karrie",
-   "anzahl": 0
+   "ergebnis": "ok",
+   "anzahl": 4,
+   "eingebettet": "mybacs-vertriebs-gmbh.jobs.personio.de",
+   "seite_geaendert": true,
+   "quelle": "personio-xml"
   },
   {
    "firma": "Aspriva",
@@ -261,7 +264,7 @@
    "url": "https://aspriva.com/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 3,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -279,7 +282,7 @@
    "typ": "personio",
    "url": "https://ahead-gmbh.jobs.personio.com",
    "ergebnis": "ok",
-   "anzahl": 10,
+   "anzahl": 11,
    "quelle": "personio-xml"
   },
   {
@@ -313,7 +316,7 @@
    "url": "https://thefrankjuice.com/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 6,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -322,7 +325,7 @@
    "url": "https://www.loewenanteil.com/pages/karriere",
    "ergebnis": "html_links",
    "anzahl": 2,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -367,16 +370,15 @@
    "url": "https://stellenangebote-rapunzel.career.softgarden.de/",
    "ergebnis": "html_links",
    "anzahl": 6,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
    "firma": "Weleda",
    "typ": "workday",
    "url": "https://weleda.wd3.myworkdayjobs.com/weleda_jobs",
-   "ergebnis": "ok",
-   "anzahl": 23,
-   "quelle": "workday"
+   "ergebnis": "fehler: HTTPError 429 Client Error: Too Many Requests for url: https://weleda.wd3.myworkdayjobs.co",
+   "anzahl": 0
   },
   {
    "firma": "Taifun Tofu",
@@ -384,7 +386,7 @@
    "url": "https://bewerbung.taifun-tofu.de",
    "ergebnis": "html_links",
    "anzahl": 14,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -392,7 +394,7 @@
    "typ": "personio",
    "url": "https://the-nu-company-gmbh.jobs.personio.de",
    "ergebnis": "ok",
-   "anzahl": 21,
+   "anzahl": 20,
    "quelle": "personio-xml"
   },
   {
@@ -401,7 +403,7 @@
    "url": "https://true-fruits.com/kontakt-zu-uns/jobs/",
    "ergebnis": "html_links",
    "anzahl": 5,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -446,7 +448,7 @@
    "url": "https://barnhouse.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 9,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
