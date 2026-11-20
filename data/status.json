@@ -1,5 +1,5 @@
 {
- "datum": "2026-11-17T05:51:37.869859Z",
+ "datum": "2026-11-20T13:47:27.226543Z",
  "erster_lauf": false,
  "firmen": [
   {
@@ -15,7 +15,7 @@
    "typ": "personio",
    "url": "https://bears-with-benefits.jobs.personio.de",
    "ergebnis": "ok",
-   "anzahl": 12,
+   "anzahl": 14,
    "quelle": "personio-xml"
   },
   {
@@ -30,10 +30,11 @@
    "firma": "Hellotaste",
    "typ": "html",
    "url": "https://hellotaste.de/pages/jobs",
-   "ergebnis": "html_links",
-   "anzahl": 7,
+   "ergebnis": "ok",
+   "anzahl": 4,
+   "eingebettet": "ohso-nutrition-gmbh.jobs.personio.de",
    "seite_geaendert": true,
-   "quelle": "html"
+   "quelle": "personio-xml"
   },
   {
    "firma": "Djoon",
@@ -59,7 +60,7 @@
    "url": "https://www.everydays.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 2,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -83,8 +84,8 @@
    "firma": "Herone",
    "typ": "personio",
    "url": "https://her1.jobs.personio.de/",
-   "ergebnis": "ok",
-   "anzahl": 2,
+   "ergebnis": "keine_offenen_stellen",
+   "anzahl": 0,
    "quelle": "personio-xml"
   },
   {
@@ -146,7 +147,7 @@
    "ergebnis": "ok",
    "anzahl": 5,
    "eingebettet": "younikat-gmbh.jobs.personio.de",
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "personio-html"
   },
   {
@@ -199,7 +200,7 @@
    "url": "https://www.elorigenfood.de/pages/stellenangebote",
    "ergebnis": "html_links",
    "anzahl": 8,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -207,7 +208,7 @@
    "typ": "html",
    "url": "https://every-foods.com/careers",
    "ergebnis": "ok",
-   "anzahl": 12,
+   "anzahl": 10,
    "eingebettet": "every.jobs.personio.com",
    "seite_geaendert": false,
    "quelle": "personio-xml"
@@ -227,7 +228,7 @@
    "url": "https://de.happymammoth.com/pages/job",
    "ergebnis": "html_links",
    "anzahl": 5,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -245,7 +246,7 @@
    "url": "https://career.biogena.com/Jobs/All",
    "ergebnis": "html_links",
    "anzahl": 25,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -253,7 +254,7 @@
    "typ": "html",
    "url": "https://mybacs.com/pages/karriere",
    "ergebnis": "ok",
-   "anzahl": 4,
+   "anzahl": 7,
    "eingebettet": "mybacs-vertriebs-gmbh.jobs.personio.de",
    "seite_geaendert": true,
    "quelle": "personio-xml"
@@ -264,7 +265,7 @@
    "url": "https://aspriva.com/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 3,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -272,7 +273,7 @@
    "typ": "html",
    "url": "https://karriere.metaflow.de/offene-stellen",
    "ergebnis": "ok",
-   "anzahl": 8,
+   "anzahl": 7,
    "eingebettet": "omos-media.jobs.personio.de",
    "seite_geaendert": false,
    "quelle": "personio-html"
@@ -282,7 +283,7 @@
    "typ": "personio",
    "url": "https://ahead-gmbh.jobs.personio.com",
    "ergebnis": "ok",
-   "anzahl": 11,
+   "anzahl": 12,
    "quelle": "personio-xml"
   },
   {
@@ -298,7 +299,7 @@
    "typ": "personio",
    "url": "https://holy.jobs.personio.de",
    "ergebnis": "ok",
-   "anzahl": 26,
+   "anzahl": 25,
    "quelle": "personio-xml"
   },
   {
@@ -306,7 +307,7 @@
    "typ": "html",
    "url": "https://livefresh.de/pages/karriere",
    "ergebnis": "html_links",
-   "anzahl": 28,
+   "anzahl": 27,
    "seite_geaendert": true,
    "quelle": "html"
   },
@@ -316,7 +317,7 @@
    "url": "https://thefrankjuice.com/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 6,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -325,7 +326,7 @@
    "url": "https://www.loewenanteil.com/pages/karriere",
    "ergebnis": "html_links",
    "anzahl": 2,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -394,7 +395,7 @@
    "typ": "personio",
    "url": "https://the-nu-company-gmbh.jobs.personio.de",
    "ergebnis": "ok",
-   "anzahl": 20,
+   "anzahl": 19,
    "quelle": "personio-xml"
   },
   {
@@ -403,7 +404,7 @@
    "url": "https://true-fruits.com/kontakt-zu-uns/jobs/",
    "ergebnis": "html_links",
    "anzahl": 5,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -448,7 +449,7 @@
    "url": "https://barnhouse.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 9,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -465,7 +466,7 @@
    "url": "https://www.vegavero.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 1,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   }
  ]
