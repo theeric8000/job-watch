@@ -1,5 +1,5 @@
 {
- "datum": "2026-11-24T15:29:36.389100Z",
+ "datum": "2026-11-27T14:38:04.441779Z",
  "erster_lauf": false,
  "firmen": [
   {
@@ -15,7 +15,7 @@
    "typ": "personio",
    "url": "https://bears-with-benefits.jobs.personio.de",
    "ergebnis": "ok",
-   "anzahl": 14,
+   "anzahl": 10,
    "quelle": "personio-xml"
   },
   {
@@ -33,7 +33,7 @@
    "ergebnis": "ok",
    "anzahl": 4,
    "eingebettet": "ohso-nutrition-gmbh.jobs.personio.de",
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "personio-xml"
   },
   {
@@ -51,7 +51,7 @@
    "url": "https://join.com/companies/ogaenics",
    "ergebnis": "html_links",
    "anzahl": 8,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -60,7 +60,7 @@
    "url": "https://www.everydays.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 2,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -94,7 +94,7 @@
    "url": "https://hormonella.co/pages/karriere",
    "ergebnis": "html_links",
    "anzahl": 30,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -112,7 +112,7 @@
    "url": "https://www.everdrop.de/about-us/jobs",
    "ergebnis": "html_links",
    "anzahl": 1,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -128,7 +128,7 @@
    "typ": "personio",
    "url": "https://the-plantly-butchers.jobs.personio.de/",
    "ergebnis": "ok",
-   "anzahl": 5,
+   "anzahl": 7,
    "quelle": "personio-xml"
   },
   {
@@ -191,7 +191,7 @@
    "url": "https://coconilla.de/blogs/jobs",
    "ergebnis": "html_links",
    "anzahl": 3,
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -218,8 +218,8 @@
    "typ": "html",
    "url": "https://www.naarmann.de/karriere/stellenangebote",
    "ergebnis": "html_links",
-   "anzahl": 35,
-   "seite_geaendert": false,
+   "anzahl": 31,
+   "seite_geaendert": true,
    "quelle": "html"
   },
   {
@@ -237,7 +237,7 @@
    "url": "https://steiger-naturals.de/pages/karriere",
    "ergebnis": "html_links",
    "anzahl": 9,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -254,9 +254,9 @@
    "typ": "html",
    "url": "https://mybacs.com/pages/karriere",
    "ergebnis": "ok",
-   "anzahl": 9,
+   "anzahl": 8,
    "eingebettet": "mybacs-vertriebs-gmbh.jobs.personio.de",
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "personio-xml"
   },
   {
@@ -273,9 +273,9 @@
    "typ": "html",
    "url": "https://karriere.metaflow.de/offene-stellen",
    "ergebnis": "ok",
-   "anzahl": 7,
+   "anzahl": 6,
    "eingebettet": "omos-media.jobs.personio.de",
-   "seite_geaendert": false,
+   "seite_geaendert": true,
    "quelle": "personio-html"
   },
   {
@@ -291,7 +291,7 @@
    "typ": "personio",
    "url": "https://yfoodlabs.jobs.personio.de/",
    "ergebnis": "ok",
-   "anzahl": 12,
+   "anzahl": 13,
    "quelle": "personio-xml"
   },
   {
@@ -299,7 +299,7 @@
    "typ": "personio",
    "url": "https://holy.jobs.personio.de",
    "ergebnis": "ok",
-   "anzahl": 21,
+   "anzahl": 20,
    "quelle": "personio-xml"
   },
   {
@@ -353,7 +353,7 @@
    "ergebnis": "keine_offenen_stellen",
    "anzahl": 0,
    "eingebettet": "nomoo.jobs.personio.de",
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "personio-xml"
   },
   {
@@ -431,7 +431,7 @@
    "url": "https://www.baelanse.com/pages/werde-teil-von-baelanse-jobs",
    "ergebnis": "html_links",
    "anzahl": 1,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -449,7 +449,7 @@
    "url": "https://barnhouse.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 9,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   },
   {
@@ -466,7 +466,7 @@
    "url": "https://www.vegavero.de/pages/jobs",
    "ergebnis": "html_links",
    "anzahl": 1,
-   "seite_geaendert": true,
+   "seite_geaendert": false,
    "quelle": "html"
   }
  ]
